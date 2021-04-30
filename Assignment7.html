@@ -1,38 +1,50 @@
-<!DOCTYPE html>
-<!--- Assignment 7:
-	Style the HTML elements according to the following instructions. 
-	DO NOT ALTER THE EXISTING HTML TO DO THIS.  WRITE ONLY CSS!
-	
-	* Give the <body> element a background of #bdc3c7
-
-	* Make the <h1> element #9b59b6
-
-	* Make all <h2> elements orange 
-
-	* Make all <li> elements blue(pick your own hexadecimal blue) 
-
-	* Change the background on every paragraph to be yellow
-
-	* Give everything with the class 'hello' a white background
-
-	* Give the element with id 'special' a 2px solid blue border(pick your own rgb blue)
-
-	* Make all the <p>'s that are nested inside of divs 25px font size.
-
-	* Give both <p>'s inside the 3rd <div> a pink background
-
-	* Give the 2nd <p> inside a <div> a 5px white border
-	
-	* Give all links in the 3rd <div> a font size of 25px.
-	
+<!DOCTYPE html>	
 	* Give all links following a link a font size of 30px.
 
---->
 <html>
 	<head>
 	  <title>Selectors Exercise</title>
 	  <style>
-	  
+	   body{
+       background-color: #bdc3c7;
+     }
+     h1{
+       color: #9b59b6;
+     }
+     h2{
+       color: orange;
+     }
+     li{
+       color: #000080;
+     }
+     p{
+       background-color: yellow;
+     }
+     .hello{
+       background-color: white;
+     }
+     #special{
+       border-style: solid;
+       border-width: 2px;
+       border-color: rgb(37, 216, 255);
+     }
+     div > p{
+       font-size: 25px;
+     }
+     .third > p{
+       background-color: pink;
+     }
+     .fourth > p{
+       border-style: solid;
+       border-width: 5px;
+       border-color: white;
+     }
+      .third > a{
+       font-size: 25px;
+     }
+     a+ a{
+       font-size: 30px;
+     }
 	  </style>
 	</head>
 	<body>
